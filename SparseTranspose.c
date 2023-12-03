@@ -1,52 +1,62 @@
-#include<stdio.h>
-#define MAX_TERMS 100
-typedef struct matrix
+#include <stdio.h>
+#define SIZE 100
+typedef struct sparseMatrix
 {
     int row;
-    int column;
-    int value;
-}sparseMatrix;
-sparseMatrix sparse[MAX_TERMS],sparseTranspose[MAX_TERMS];
-int rows,cols,nonZeroCount;
+    int col;
+    int val;
+} sparseMatrix;
+sparseMatrix sparse[SIZE], sparseTranspose[SIZE];
 void readSparse()
 {
-    int i,j;
-    printf("\nEnter the Sparse Matrix :\n");
-    scanf("%d %d %d",&rows,&cols,&nonZeroCount);
-    sparse[0].row = rows;
-    sparse[0].column = cols;
-    sparse[0].value = nonZeroCount;
-    for(i=1;i<=nonZeroCount;i++) scanf("%d %d %d",&sparse[i].row,&sparse[i].column,&sparse[i].value);
-}
-int convertTranspose()
-{
-    sparseTranspose[0].row = sparse[0].column;
-    sparseTranspose[0].column = sparse[0].row;
-    sparseTranspose[0].value = sparse[0].value;
-    int i,j,k=1;
-    for(i=1;i<=cols;i++)
+    scanf("%d %d %d", &sparse[0].row, &sparse[0].col, &sparse[0].val);
+    for (int i = 1; i <= sparse[0].val; i++)
     {
-        for(j=1;j<=nonZeroCount;j++)
+        scanf("%d %d %d", &sparse[i].row, &sparse[i].col, &sparse[i].val);
+    }
+}
+
+int transpose()
+{
+    sparseTranspose[0].row = sparse[0].col;
+    sparseTranspose[0].col = sparse[0].row;
+    sparseTranspose[0].val = sparse[0].val;
+    int i,j;
+    int k = 1;
+    while (k <= sparse[0].val)
+    {
+        for(j=0;j<sparse[0].col;j++)
         {
-            if(sparse[j].column == i)
+            for(i=1;i<=sparse[0].val;i++)
             {
-                sparseTranspose[k].row = sparse[j].column;
-                sparseTranspose[k].column = sparse[j].row;
-                sparseTranspose[k].value = sparse[j].value;
+                if(sparse[i].col == j)
+                {
+                sparseTranspose[k].row = sparse[i].col;
+                sparseTranspose[k].col = sparse[i].row;
+                sparseTranspose[k].val = sparse[i].val;
                 k++;
+                }
             }
         }
     }
     return k;
 }
-void displaySparse(sparseMatrix sparse[],int n)
+
+void displaySparse(sparseMatrix sparse[], int k)
 {
-    for(int i=0;i<=n;i++) printf("\n%d %d %d",sparse[i].row,sparse[i].column,sparse[i].value);
+    int i;
+    for (i = 0; i < k; i++)
+    {
+        printf("%d %d %d\n", sparse[i].row, sparse[i].col, sparse[i].val);
+    }
 }
-void main()
+int main()
 {
-    int n;
+    int k;
+    printf("\nEnter the sparse matrix : \n");
     readSparse();
-    n = convertTranspose();
-    displaySparse(sparseTranspose,n);
+    printf("\nTranspose : \n");
+    k = transpose();
+    displaySparse(sparseTranspose,k);
+    return 0;
 }
