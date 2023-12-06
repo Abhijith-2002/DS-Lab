@@ -45,10 +45,14 @@ void dequeue()
 void display()
 {
     queue* temp = front;
-    while(temp!=NULL)
+    if(front==NULL) printf("\nQueue Empty");
+    else
     {
-        printf("%d",temp->data);
-        temp = temp->next;
+        while(temp!=NULL)
+        {
+            printf("%d",temp->data);
+            temp = temp->next;
+        }
     }
 }
 void main()
