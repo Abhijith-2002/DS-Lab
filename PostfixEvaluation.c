@@ -17,7 +17,7 @@ int isOperand(int ch)
 }
 void push(int data)
 {
-    if(stackFull()) printf("Stack Overflow !");
+    if(stackFull()) printf("\nStack Overflow !");
     else
     {
         stack[++top] = data;
@@ -26,7 +26,7 @@ void push(int data)
 int pop()
 {
     int del;
-    if(stackEmpty()) printf("Stack Underflow");
+    if(stackEmpty()) printf("\nStack Underflow");
     else if(top==0)
     {
         del = stack[top];
@@ -93,7 +93,7 @@ int postfixEval()
 }
 void main()
 {
-    printf("Enter a valid Postfix exprression :");
+    printf("\nEnter a valid Postfix exprression :");
     scanf("%s",expr);
-    printf("Result : %d",ipostfixEval());
+    printf("\nResult : %d",postfixEval());
 }
