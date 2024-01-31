@@ -13,7 +13,7 @@ int readPoly()
     int n;
     printf("\nEnter the total number of terms in the polynomial :\n");
     scanf("%d",&n);
-    printf("\nEnter the Coefficient and Exponenet in Descending Order");
+    printf("\nEnter the Coefficients and Exponents in of the polynomial");
     for(int i=0;i<n;i++)
     {
         printf("\nEnter the Coefficient-(%d) :",i+1);
