@@ -7,6 +7,21 @@ typedef struct
     int expo;
 }polynomial;
 polynomial firstPoly[MAX_TERMS],secondPoly[MAX_TERMS],resultPoly[MAX_TERMS];
+int readPoly(polynomial poly[])
+{
+    int n;
+    printf("\nEnter the total number of terms in the polynomial :");
+    scanf("%d",&n);
+    printf("\nEnter the Coefficients and Exponents of the Polynomial");
+    for(int i=0;i<n;i++)
+    {
+        printf("\nEnter the Coefficient-(%d) :",i+1);
+        scanf("%f",&poly[i].coeff);
+        printf("\nEnter the Exponent-(%d) :",i+1);
+        scanf("%d",&poly[i].expo);
+    }
+    return n;
+}
 int addPoly(int n1,int n2)
 {
     int i,j,k;
@@ -62,21 +77,6 @@ void displayPoly(polynomial poly[],int n)
         printf("%.2fx^%d+",poly[i].coeff,poly[i].expo);
     }
     printf("%.2fx^%d",poly[i].coeff,poly[i].expo);
-}
-int readPoly(polynomial poly[])
-{
-    int n;
-    printf("\nEnter the total number of terms in the polynomial :\n");
-    scanf("%d",&n);
-    printf("\nEnter the Coefficient and Exponenet in Descending Order");
-    for(int i=0;i<n;i++)
-    {
-        printf("\nEnter the Coefficient-(%d) :",i+1);
-        scanf("%f",&poly[i].coeff);
-        printf("\nEnter the Exponent-(%d) :",i+1);
-        scanf("%d",&poly[i].expo);
-    }
-    return n;
 }
 int main() {
     int n1,n2,n3;
