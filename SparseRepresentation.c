@@ -7,7 +7,6 @@ typedef struct matrix
 }matrix;
 int rows,cols,normalMatrix[10][10];
 matrix sparseMatrix[100];
-int nonZeroCount;
 void readMatrix()
 {
     printf("\nEnter the number of rows : ");
@@ -27,26 +26,26 @@ void convertSparse()
 {
     sparseMatrix[0].row = rows;
     sparseMatrix[0].column = cols;
-    int rowNo=1;
+    int k=1;
     for(int i=0;i<rows;i++)
     {
         for(int j=0;j<cols;j++)
         {
             if(normalMatrix[i][j]!=0)
             {
-                sparseMatrix[rowNo].row = i;
-                sparseMatrix[rowNo].column = j;
-                sparseMatrix[rowNo].value = normalMatrix[i][j];
-                rowNo++;
-                nonZeroCount++;
+                sparseMatrix[k].row = i;
+                sparseMatrix[k].column = j;
+                sparseMatrix[k].value = normalMatrix[i][j];
+                k++;
             }
         }
     }
-    sparseMatrix[0].value = nonZeroCount;
+    sparseMatrix[0].value = k-1;
 }
 void displaySparse()
 {
-    for(int i=0;i<=nonZeroCount;i++)
+    printf("\nrow\tcol\tval");
+    for(int i=0;i<=sparseMatrix[0].value;i++)
     {
         printf("\n%d\t%d\t%d",sparseMatrix[i].row,sparseMatrix[i].column,sparseMatrix[i].value);
     }
@@ -54,7 +53,7 @@ void displaySparse()
 void sparsity()
 {
     float sparsity;
-    sparsity = (((rows*cols)-nonZeroCount)/(float)(rows*cols));
+    sparsity = (((rows*cols)-sparseMatrix[0].value)/(float)(rows*cols));
     printf("\nThe sparsity of the matrix is : %f",sparsity);
 }
 void main()
