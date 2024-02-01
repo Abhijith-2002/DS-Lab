@@ -46,7 +46,7 @@ This repository contains solutions of all Data Structures Lab programs (S3 KTU M
 
 2)Insertion sort.<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/InsertionSort.c">Solution</a>
 
-3)Selection sort.<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/PolynomialAddition.c">Solution</a>
+3)Selection sort.<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/SelectionSort.c">Solution</a>
 
 4)Quick sort.<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/PolynomialAddition.c">Solution</a>
 
