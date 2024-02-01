@@ -42,7 +42,7 @@ This repository contains solutions of all Data Structures Lab programs (S3 KTU M
 5)Implement a circular linked list(DLL).<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/CircularQueueSLL.c">Solution</a>
 ## Cycle-4
 
-1)Bubble sort.<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/PolynomialAddition.c">Solution</a>
+1)Bubble sort.<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/BubbleSort.c">Solution</a>
 
 2)Insertion sort.<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/PolynomialAddition.c">Solution</a>
 
