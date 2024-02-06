@@ -62,6 +62,6 @@ This repository contains solutions of all Data Structures Lab programs (S3 KTU M
 1)Implementation of all operations on a binary tree(insertion,deletion,traversal).<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/PolynomialAddition.c">Solution</a>
 ## Cycle-6
 
-1)Implementation of BFS and DFS for graph representation(adjacency matrix/adjacency list).<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/PolynomialAddition.c">Solution</a>
+1)Implementation of BFS and DFS for graph representation(adjacency matrix/adjacency list).<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/Graph.c">Solution</a>
 
 2)Implementation of hash table using your own mapping functions and observe collision and resolution schemes.<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/PolynomialAddition.c">Solution</a>
