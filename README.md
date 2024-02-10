@@ -65,3 +65,25 @@ This repository contains solutions of all Data Structures Lab programs (S3 KTU M
 1)Implementation of BFS and DFS for graph representation(adjacency matrix/adjacency list).<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/Graph.c">Solution</a>
 
 2)Implementation of hash table using your own mapping functions and observe collision and resolution schemes.<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/PolynomialAddition.c">Solution</a>
+
+## External Exam Questions
+
+1)Binary Search Tree: Insert, Delete, Traversal (all 3).<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/BST.c">Solution</a>
+
+2)In Singly Linked List, difference between 2 node values.<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/NodeDifference.c">Solution</a>
+
+3)Stack using linked list.<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/StackSLL.c">Solution</a>
+
+4)Program to calculate no of leaf nodes in a BST.<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/LeafNodeCounnt.c">Solution</a>
+
+5)Display alternate elements in a singly linked list.<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/AlternateElements.c">Solution</a>
+
+6)Singly linked list 
+        Remove duplicate elements,
+        Find maximum and minimum element
+        Find Sum of all elements
+        Make a copy of the linked list and display.<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/SLLExternal.c">Solution</a>
+
+7)Polynomial multiplication using linked list.<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/PolynomialMultiplicationSLL.c">Solution</a>
+
+8)Check whether a given  doubly linked list is palindrome or not.<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/PalindromeExternal.c">Solution</a>
