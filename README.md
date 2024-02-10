@@ -74,7 +74,7 @@ This repository contains solutions of all Data Structures Lab programs (S3 KTU M
 
 3)Stack using linked list.<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/StackSLL.c">Solution</a>
 
-4)Program to calculate no of leaf nodes in a BST.<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/LeafNodeCounnt.c">Solution</a>
+4)Program to calculate no of leaf nodes in a BST.<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/LeafNodeCount.c">Solution</a>
 
 5)Display alternate elements in a singly linked list.<a href="https://github.com/Abhijith-2002/DS-Lab/blob/main/AlternateElements.c">Solution</a>
 
