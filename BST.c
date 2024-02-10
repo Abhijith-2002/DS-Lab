@@ -195,7 +195,7 @@ void main()
             case 3 :
                 printf("\nEnter the data to be deleted : ");
                 scanf("%d",&data);
-                deleteNode(root,data);
+                root = deleteNode(root,data);
                 break;
             case 4 :
                 printf("\nEnter the data to be searched : ");
