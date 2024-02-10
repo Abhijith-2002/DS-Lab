@@ -32,9 +32,9 @@ void insertNode(int data)
 void readSLL()
 {
     int data,choice;
+    printf("Reading Linked List...\n");
     do
     {
-        printf("Reading Linked List...\n");
         printf("Enter the data : \n");
         scanf("%d",&data);
         insertNode(data);
