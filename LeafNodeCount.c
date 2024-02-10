@@ -49,9 +49,9 @@ void main()
 {
     Node* root = NULL;
     int data,choice;
+    printf("Reading Tree...\n");
     do
     {
-        printf("Reading Tree...\n");
         printf("Enter the node data : \n");
         scanf("%d",&data);
         root = insertNode(root,data);
