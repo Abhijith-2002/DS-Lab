@@ -47,20 +47,27 @@ void nodeDiff(int pos1,int pos2)
     int track=1;
     Node* temp = head;
     int data1,data2;
-    while(temp!=NULL && track<=pos2)
+    if(pos1==pos2)
     {
-        if(track==pos1)
-        {
-            data1 = temp->data;
-        }
-        else if(track==pos2)
-        {
-            data2 = temp->data;
-        }
-        track++;
-        temp = temp->next;
+        printf("\nNode Difference : 0");
     }
-    printf("\nNode Difference : %d",(data2-data1));
+    else
+    {
+        while(temp!=NULL && track<=pos2)
+        {
+            if(track==pos1)
+            {
+                data1 = temp->data;
+            }
+            else if(track==pos2)
+            {
+                data2 = temp->data;
+            }
+            track++;
+            temp = temp->next;
+        }
+        printf("\nNode Difference : %d",(data2-data1));
+    }
 }
 void main()
 {
